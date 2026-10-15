@@ -10,3 +10,54 @@ body, html {
 	object-fit: cover;
 	display: block;
 }
+
+.settings-btn {
+	position: fixed;
+	top: 20px;
+	left: 20px;
+
+	z-index: 10;
+
+	padding: 3px 3px;
+	font-size: 50px;
+	color:white;
+	background-color: rgba(0,0,0,0.6);
+	border: 1px solid rgba(255,255,255,0.3);
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.settings-btn:hover {
+	background-color: rgba(0,0,0, 0.8);
+}
+
+.playback-controls {
+	position: fixed;
+	bottom: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 10;
+
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.control-btn {
+	padding: 12px 20px;
+	font-size: 24px;
+	color: white;
+	background-color: rgba(0,0,0,0.6);
+	border: 1px solid rgba(255,255,255,0.3);
+	border-radius: 12px;
+	cursor: pointer;
+}
+
+.control-btn:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+.playpause {
+	padding: 16px 26px;
+	font-size: 42px;
+}

@@ -21,8 +21,22 @@ function App() {
 	});
 
 	return (
-		<div>
+		<div class="app-container">
 			<video class="camera-feed" ref={videoRef} autoplay playsinline muted />
+			<button class="settings-btn" onClick={() => console.log("settings-btn pressed")}>
+				⚙️
+			</button>
+			<div class="playback-controls">
+				<button class="control-btn">
+					⏪
+				</button>
+				<button class="control-btn playpause">
+					⏯️
+				</button>
+				<button class="control-btn">
+					⏩
+				</button>
+			</div>
 		</div>
   );
 }
